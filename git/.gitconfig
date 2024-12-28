@@ -3,3 +3,5 @@
 	email = piracyonmars@gmail.com
 [push]
 	autoSetupRemote = true
+[pull]
+	rebase = true
