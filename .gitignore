@@ -1,1 +1,6 @@
 .mono/
+tags
+test.sh
+.luarc.json
+
+spell/
