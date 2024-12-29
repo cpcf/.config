@@ -1,0 +1,4 @@
+macos-titlebar-style = tabs
+theme = dark:catppuccin-macchiato,light:catppuccin-latte
+background-opacity = 1 
+background-blur-radius = 20
