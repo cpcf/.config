@@ -12,6 +12,6 @@ config.enable_scroll_bar = true
 config.send_composed_key_when_left_alt_is_pressed = true
 config.send_composed_key_when_right_alt_is_pressed = false
 config.font = wezterm.font("MesloLGS NF")
-
+config.max_fps = 120
 -- and finally, return the configuration to wezterm
 return config

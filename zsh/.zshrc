@@ -11,7 +11,7 @@ path+=('/Users/cfleming/bin/')
 path+=('/Users/cfleming/src/scripts')
 path+=('/Applications/WezTerm.app/Contents/MacOS')
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/cfleming/.oh-my-zsh"
+export ZSH="/home/cfleming/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -126,3 +126,4 @@ export NVM_DIR="$HOME/.nvm"
 
 GOPATH=/Users/cfleming/src/go
 PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin
