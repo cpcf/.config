@@ -1,8 +1,5 @@
 # Personal collection of config files
 
-I considered using a bare git repo for this, but think I'm more likely to remember how I've set this up and less likely to make a mistake when setting it up on a new machine.
-This is simply a directory per tool, which are either pointed directly to the directory, or linked through symlinks.
-
 ## Setup
 Clone this repo to `~/.config`:
 ```bash
