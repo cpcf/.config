@@ -5,3 +5,5 @@ test.sh
 
 spell/
 jgit/
+wireshark/
+.local/

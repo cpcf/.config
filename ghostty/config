@@ -1,4 +1,6 @@
 macos-titlebar-style = tabs
-theme = catppuccin-macchiato
+theme = dark:catppuccin-mocha,light:catppuccin-macchiato
 background-opacity = 1 
 background-blur-radius = 20
+font-family = Iosevka Term
+font-size = 16
