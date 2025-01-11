@@ -126,3 +126,5 @@ export NVM_DIR="$HOME/.nvm"
 
 GOPATH=/Users/cfleming/src/go
 PATH=$PATH:$GOPATH/bin
+
+export TERM=xterm-256color

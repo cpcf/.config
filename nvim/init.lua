@@ -160,6 +160,7 @@ vim.opt.scrolloff = 10
 -- Set tab size to 4
 vim.opt.tabstop = 4
 
+vim.opt.conceallevel = 1
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
