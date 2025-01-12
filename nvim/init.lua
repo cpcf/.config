@@ -164,6 +164,13 @@ vim.opt.conceallevel = 1
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
+-- Move lines up and down
+vim.keymap.set('n', '[j', 'ddp', { desc = 'Move line down' })
+vim.keymap.set('n', '[k', 'ddkP', { desc = 'Move line up' })
+
+-- Obsidian keymaps
+vim.keymap.set('n', '<leader>tc', '<cmd>ObsidianTOC<cr>', { desc = 'Obsidian Table of Contents' })
+
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
