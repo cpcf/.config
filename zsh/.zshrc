@@ -127,4 +127,10 @@ export NVM_DIR="$HOME/.nvm"
 GOPATH=/Users/cfleming/src/go
 PATH=$PATH:$GOPATH/bin
 
+ZIGPATH=/Users/cfleming/src/zig
+PATH=$PATH:$ZIGPATH
+
+NVIMPATH=/Users/cfleming/src/nvim
+PATH=$PATH:$NVIMPATH/bin
+
 export TERM=xterm-256color
