@@ -169,7 +169,10 @@ vim.keymap.set('n', '[j', 'ddp', { desc = 'Move line down' })
 vim.keymap.set('n', '[k', 'ddkP', { desc = 'Move line up' })
 
 -- Obsidian keymaps
-vim.keymap.set('n', '<leader>tc', '<cmd>ObsidianTOC<cr>', { desc = 'Obsidian Table of Contents' })
+vim.keymap.set('n', '<leader>oc', '<cmd>ObsidianTOC<cr>', { desc = 'Obsidian Table of Contents' })
+vim.keymap.set('n', '<leader>ot', '<cmd>ObsidianTags<cr>', { desc = 'Obsidian Tags' })
+vim.keymap.set({ 'n', 'v' }, '<leader>ol', '<cmd>ObsidianLink<cr>', { desc = 'Obsidian Link' })
+vim.keymap.set({ 'n', 'v' }, '<leader>on', '<cmd>ObsidianLinkNew<cr>', { desc = 'Obsidian New Link' })
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
@@ -337,6 +340,7 @@ require('lazy').setup({
         { '<leader>w', group = '[W]orkspace' },
         { '<leader>t', group = '[T]oggle' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
+        { '<leader>o', group = '[O]bsidian' },
       },
     },
   },
