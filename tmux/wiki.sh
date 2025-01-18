@@ -16,7 +16,10 @@ then
 
     # Split second pane
     tmux new-window -t $SESSION:1 -n 'zsh'
+    tmux send-keys -t 'zsh' 'cd ~/src/wiki/' C-m 'clear' C-m
     tmux split-window -t 'zsh'
+    tmux select-pane -t 1
+    tmux send-keys -t 'zsh' 'cd ~/src/wiki/' C-m 'clear' C-m
 fi
 
 # Attach Session, on the Main window
