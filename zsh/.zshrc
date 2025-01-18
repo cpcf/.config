@@ -122,15 +122,16 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Add go bin to path
-
-GOPATH=/Users/cfleming/src/go
+GOPATH=/Users/cfleming/bin/go
 PATH=$PATH:$GOPATH/bin
 
-ZIGPATH=/Users/cfleming/src/zig
+ZIGPATH=/Users/cfleming/bin/zig
 PATH=$PATH:$ZIGPATH
 
-NVIMPATH=/Users/cfleming/src/nvim
+NVIMPATH=/Users/cfleming/bin/nvim
 PATH=$PATH:$NVIMPATH/bin
+
+PROTOCPATH=/Users/cfleming/bin/protoc/bin
+PATH=$PATH:$PROTOCPATH
 
 export TERM=xterm-256color
