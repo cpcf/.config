@@ -635,7 +635,9 @@ require('lazy').setup({
       --  - settings (table): Override the default settings passed when initializing the server.
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
-        -- clangd = {},
+        clangd = {
+          filetypes = { 'c', 'cpp', 'objc', 'objcpp', 'cuda' }, -- exclude "proto".
+        },
         omnisharp = {},
         gopls = {},
         -- pyright = {},
@@ -663,6 +665,7 @@ require('lazy').setup({
             },
           },
         },
+        protols = {},
       }
 
       -- Ensure the servers and tools above are installed
@@ -995,7 +998,7 @@ require('lazy').setup({
   --  Here are some example plugins that I've included in the Kickstart repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
-  -- require 'kickstart.plugins.debug',
+  require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
   -- require 'kickstart.plugins.autopairs',
