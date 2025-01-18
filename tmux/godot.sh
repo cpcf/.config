@@ -13,7 +13,7 @@ then
     # Name first Pane and start zsh
     tmux rename-window -t 0 'server'
     tmux send-keys -t 'server' 'cd server' C-m 
-    tmux send-keys -t 'server' 'nvim --listen /tmp/godot.pipe' C-m 
+    tmux send-keys -t 'server' 'nvim' C-m 
 
     tmux new-window -t $SESSION:1 -n 'client'
     tmux send-keys -t 'client' 'cd client' C-m 
